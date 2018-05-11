@@ -122,11 +122,13 @@ class CalendarHeader extends Component {
         </View>
         {
           !this.props.hideDayNames &&
-          <View style={this.style.week}>
-            {this.props.weekNumbers && <Text allowFontScaling={false} style={this.style.dayHeader}></Text>}
-            {weekDaysNames.map((day, idx) => (
-              <Text allowFontScaling={false} key={idx} accessible={false} style={this.style.dayHeader} numberOfLines={1} importantForAccessibility='no'>{day}</Text>
-            ))}
+          <View style={{backgroundColor: '#6C1960'}}>  
+            <View style={this.style.week}>
+              {this.props.weekNumbers && <Text allowFontScaling={false} style={this.style.dayHeader}></Text>}
+              {weekDaysNames.map((day, idx) => (
+                <Text allowFontScaling={false} key={idx} accessible={false} style={this.style.dayHeader} numberOfLines={1} importantForAccessibility='no'>{day.charAt(0)}</Text>
+              ))}
+            </View>
           </View>
         }
       </View>
