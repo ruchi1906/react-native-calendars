@@ -16,8 +16,8 @@ export default function(theme={}) {
     monthText: {
       fontSize: appStyle.textMonthFontSize,
       fontFamily: appStyle.textMonthFontFamily,
-      fontWeight: appStyle.textMonthFontWeight,
-      color: appStyle.monthTextColor,
+      fontWeight: 'bold',
+      color: '#56144D',
       margin: 10
     },
     arrow: {
@@ -42,10 +42,11 @@ export default function(theme={}) {
       marginTop: 2,
       marginBottom: 7,
       width: 32,
+      fontWeight: '600',
       textAlign: 'center',
       fontSize: appStyle.textDayHeaderFontSize,
       fontFamily: appStyle.textDayHeaderFontFamily,
-      color: appStyle.textSectionTitleColor
+      color: 'white'
     },
     ...(theme[STYLESHEET_ID] || {})
   });
