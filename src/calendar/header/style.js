@@ -44,7 +44,7 @@ export default function(theme={}) {
       width: 32,
       fontWeight: '600',
       textAlign: 'center',
-      fontSize: appStyle.textDayHeaderFontSize,
+      fontSize: 17,
       fontFamily: appStyle.textDayHeaderFontFamily,
       color: 'white'
     },
